@@ -33,10 +33,10 @@ const reverseStr = (str) => {
   let outStr = strToArr.reverse();
   outStr = outStr.join("");
 
-  console.log(outStr);
+  return outStr;
 };
 
-reverseStr("Константин");
+console.log(reverseStr("Константин"));
 
 // Задание 4.
 // Напишите функцию, которая принимает два аргумента и возвращает их сумму. Функция должна работать двумя способами: mul(x, y), mul(x)(y).
@@ -57,3 +57,20 @@ const mul = (x) => {
 
 console.log(mul(5, 6));
 console.log(mul(5)(6));
+
+// Задание №5
+// Напишите функцию, которая проверит, является ли слово палиндромом.Пример:
+// isPalindrome(“topot”) == true;
+// isPalindrome(“topop”) == false;
+const isPalindrome = (str) => {
+  const str2 = reverseStr(str);
+
+  if (str === str2) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(isPalindrome("topot"));
+console.log(isPalindrome("topop"));
