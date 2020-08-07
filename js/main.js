@@ -37,3 +37,23 @@ const reverseStr = (str) => {
 };
 
 reverseStr("Константин");
+
+// Задание 4.
+// Напишите функцию, которая принимает два аргумента и возвращает их сумму. Функция должна работать двумя способами: mul(x, y), mul(x)(y).
+const mul = (x) => {
+  let item = x;
+  const innerMul = (y) => {
+    item *= y;
+
+    return innerMul;
+  };
+
+  innerMul.toString = () => {
+    return item;
+  };
+
+  return innerMul;
+};
+
+console.log(mul(5, 6));
+console.log(mul(5)(6));
