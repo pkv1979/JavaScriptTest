@@ -74,3 +74,28 @@ const isPalindrome = (str) => {
 
 console.log(isPalindrome("topot"));
 console.log(isPalindrome("topop"));
+
+// Задание №6
+// Напишите функцию, которая принимает два аргумента и проверяет, является ли одно слово анаграммой другого.Пример:
+// isAnagram(“finder”, “Friend”) == true;
+// isAnagram(“friend”, “find”) == false;
+const isAnagram = (str1, str2) => {
+  str1 = str1.toLowerCase();
+  let str1ToArr = str1.split("");
+  str1ToArr.sort();
+  let outStr1 = str1ToArr.join("");
+
+  str2 = str2.toLowerCase();
+  let str2ToArr = str2.split("");
+  str2ToArr.sort();
+  let outStr2 = str2ToArr.join("");
+
+  if (outStr1 === outStr2) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(isAnagram("finder", "Friend"));
+console.log(isAnagram("friend", "find"));
