@@ -23,3 +23,17 @@ for (let i = 0; i < 5; i++) {
     console.log(i);
   }, 1000);
 }
+
+// Задание №3
+// Напишите функцию, которая принимает строку в качестве аргумента и возвращает ее развернутой в обратную сторону. Например:
+// Дано: Ира
+// Вернет: арИ
+const reverseStr = (str) => {
+  let strToArr = str.split("");
+  let outStr = strToArr.reverse();
+  outStr = outStr.join("");
+
+  console.log(outStr);
+};
+
+reverseStr("Константин");
