@@ -9,6 +9,7 @@ const sumTo = (n) => {
   console.log(`Сумма чисел от 1 до ${n} равняется ${sum}`);
 };
 
+console.log("Задание 1");
 sumTo(5);
 
 // Задание №2
@@ -18,6 +19,7 @@ sumTo(5);
 // console.log(i);
 // }, 1000);
 // }
+console.log("Задание 2");
 for (let i = 0; i < 5; i++) {
   setTimeout(function () {
     console.log(i);
@@ -36,6 +38,7 @@ const reverseStr = (str) => {
   return outStr;
 };
 
+console.log("Задание 3");
 console.log(reverseStr("Константин"));
 
 // Задание 4.
@@ -55,6 +58,7 @@ const mul = (x) => {
   return innerMul;
 };
 
+console.log("Задание 4");
 console.log(mul(5, 6));
 console.log(mul(5)(6));
 
@@ -72,6 +76,7 @@ const isPalindrome = (str) => {
   }
 };
 
+console.log("Задание 5");
 console.log(isPalindrome("topot"));
 console.log(isPalindrome("topop"));
 
@@ -97,5 +102,19 @@ const isAnagram = (str1, str2) => {
   }
 };
 
+console.log("Задание 6");
 console.log(isAnagram("finder", "Friend"));
 console.log(isAnagram("friend", "find"));
+
+// Задание №7
+// Напишите функцию, которая возвращает число из последовательности фибоначи по его порядковому номеру.Пример:
+// fibonacci(4) == 3;
+// fibonacci(3) == 2;
+const fibonacci = (num) => {
+  return num <= 1 ? num : fibonacci(num - 1) + fibonacci(num - 2);
+};
+
+console.log("Задание 7");
+console.log(fibonacci(4));
+console.log(fibonacci(3));
+console.log("----------");
