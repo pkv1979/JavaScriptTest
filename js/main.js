@@ -30,6 +30,8 @@ for (let i = 0; i < 5; i++) {
 // Напишите функцию, которая принимает строку в качестве аргумента и возвращает ее развернутой в обратную сторону. Например:
 // Дано: Ира
 // Вернет: арИ
+
+// решается через спит, джоин, реверс 
 const reverseStr = (str) => {
   let strToArr = str.split("");
   let outStr = strToArr.reverse();
@@ -43,6 +45,7 @@ console.log(reverseStr("Константин"));
 
 // Задание 4.
 // Напишите функцию, которая принимает два аргумента и возвращает их сумму. Функция должна работать двумя способами: mul(x, y), mul(x)(y).
+// ваще не понял, что тут. решается не так
 const mul = (x) => {
   let item = x;
   const innerMul = (y) => {
@@ -84,6 +87,8 @@ console.log(isPalindrome("topop"));
 // Напишите функцию, которая принимает два аргумента и проверяет, является ли одно слово анаграммой другого.Пример:
 // isAnagram(“finder”, “Friend”) == true;
 // isAnagram(“friend”, “find”) == false;
+
+// решается через sort
 const isAnagram = (str1, str2) => {
   str1 = str1.toLowerCase();
   let str1ToArr = str1.split("");
@@ -118,3 +123,5 @@ console.log("Задание 7");
 console.log(fibonacci(4));
 console.log(fibonacci(3));
 console.log("----------");
+
+// Почитай про кодстайл и встроенные функции работы с массивами и строками
